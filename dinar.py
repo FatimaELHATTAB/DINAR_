@@ -3,7 +3,7 @@ from torch.nn.functional import normalize
 import torch
 
 
-def pastel(target_model, layer_type='bn', layers=['bn']):
+def dinar(target_model, layer_type='bn', layers=['bn']):
     model_dict = copy.deepcopy(target_model)
     for key in target_model:
         for layer in layers:
